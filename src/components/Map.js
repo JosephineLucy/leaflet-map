@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 import { markerArr, mainLines, parkWalks } from "../data/markerData";
 
-const Map = ({ showMainlines, showParkWalks }) => {
+const Map = ({ showMainlines, showParkWalks, setTableData }) => {
   const [place, setPlace] = useState(null);
 
   return (
@@ -29,6 +29,7 @@ const Map = ({ showMainlines, showParkWalks }) => {
             eventHandlers={{
               click: () => {
                 setPlace(marker);
+                setTableData(marker);
               },
             }}
           >

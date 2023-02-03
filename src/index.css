@@ -13,12 +13,80 @@ code {
 }
 
 .App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.App h2 {
+  text-align: center;
+  padding-top: 60px;
+  color: rgb(57, 57, 57);
+  font-size: 2.4rem;
+}
+
+.map-and-table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  height: 700px;
+}
+
+.table-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  border: 2px solid grey;
+  height: 60%;
+  width: 40%;
+}
+
+.data-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 75px);
+  grid-template-areas:
+    "title title"
+    "image type "
+    "image rating";
+  margin: 0 10px;
+}
+
+.title {
+  grid-area: title;
+  font-size: 1.4rem;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.table-image {
+  height: 150px;
+  width: 150px;
+  grid-area: image;
+  justify-self: center;
+  align-self: center;
+}
+
+.type {
+  grid-area: type;
+  height: 100%;
+  justify-self: center;
+}
+
+.rating {
+  grid-area: rating;
+  height: 100%;
+  justify-self: center;
+}
+
+.map-and-btns {
+  height: 60%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons-container {
@@ -28,11 +96,6 @@ code {
 
 button {
   margin: 3px;
-}
-
-.container-map {
-  height: 50%;
-  width: 70%;
 }
 
 .leaflet-container {
