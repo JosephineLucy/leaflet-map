@@ -17,11 +17,17 @@ code {
   width: 100vw;
 }
 
+p,
+h2,
+h4 {
+  color: rgb(57, 57, 57);
+}
+
 .App h2 {
   text-align: center;
   padding-top: 60px;
-  color: rgb(57, 57, 57);
   font-size: 2.4rem;
+  margin-bottom: 0;
 }
 
 .map-and-table {
@@ -30,55 +36,6 @@ code {
   align-items: center;
   padding: 0 10px;
   height: 700px;
-}
-
-.table-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid grey;
-  height: 60%;
-  width: 40%;
-}
-
-.data-grid {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 75px);
-  grid-template-areas:
-    "title title"
-    "image type "
-    "image rating";
-  margin: 0 10px;
-}
-
-.title {
-  grid-area: title;
-  font-size: 1.4rem;
-  text-align: center;
-  align-self: flex-start;
-}
-
-.table-image {
-  height: 150px;
-  width: 150px;
-  grid-area: image;
-  justify-self: center;
-  align-self: center;
-}
-
-.type {
-  grid-area: type;
-  height: 100%;
-  justify-self: center;
-}
-
-.rating {
-  grid-area: rating;
-  height: 100%;
-  justify-self: center;
 }
 
 .map-and-btns {
@@ -96,9 +53,80 @@ code {
 
 button {
   margin: 3px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .leaflet-container {
   width: 100%;
   height: 100%;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-end;
+  border-radius: 5px;
+  height: 700px;
+  width: 40%;
+}
+
+.data-grid {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(57, 57, 57);
+  height: 60%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.table-type-and-place {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-image {
+  height: 100%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.type {
+  padding: 10px;
+}
+
+.rating {
+  padding: 10px;
+}
+
+.table-img-and-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.table-img-and-info > p {
+  font-size: 0.8rem;
+}
+
+.table-container {
+  height: 700px;
+}
+
+.table-image {
+  align-self: center;
 }

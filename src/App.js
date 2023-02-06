@@ -6,6 +6,8 @@ function App() {
   const [showMainlines, setShowMainlines] = useState(true);
   const [showParkWalks, setShowParkWalks] = useState(true);
   const [tableData, setTableData] = useState(null);
+  const [comparisonOne, setComparisonOne] = useState(null);
+  const [comparisonTwo, setComparisonTwo] = useState(null);
 
   console.log(tableData, "<<<<tableData");
   return (
@@ -25,6 +27,10 @@ function App() {
             showMainlines={showMainlines}
             showParkWalks={showParkWalks}
             setTableData={setTableData}
+            comparisonOne={comparisonOne}
+            setComparisonOne={setComparisonOne}
+            comparisonTwo={comparisonTwo}
+            setComparisonTwo={setComparisonTwo}
           />
         </div>
         <Table tableData={tableData} />

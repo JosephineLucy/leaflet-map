@@ -9,7 +9,15 @@ import {
 import { useState } from "react";
 import { markerArr, mainLines, parkWalks } from "../data/markerData";
 
-const Map = ({ showMainlines, showParkWalks, setTableData }) => {
+const Map = ({
+  showMainlines,
+  showParkWalks,
+  setTableData,
+  comparisonOne,
+  setComparisonOne,
+  comparisonTwo,
+  setComparisonTwo,
+}) => {
   const [place, setPlace] = useState(null);
 
   return (
@@ -32,25 +40,24 @@ const Map = ({ showMainlines, showParkWalks, setTableData }) => {
                 setTableData(marker);
               },
             }}
-          >
-            {place && (
-              <Popup
-                position={[place.coOrds[0], place.coOrds[1]]}
-                eventHandlers={{
-                  close: () => {
-                    setPlace(null);
-                  },
-                }}
-              >
-                <div className="pop-up">
-                  <h2>{place.name}</h2>
-                </div>
-              </Popup>
-            )}
-          </Marker>
+          ></Marker>
         ))}
         {showMainlines && (
           <Polyline pathOptions={{ color: "blue" }} positions={mainLines} />
+        )}
+        {place && (
+          <Popup
+            position={[place.coOrds[0], place.coOrds[1]]}
+            eventHandlers={{
+              close: () => {
+                setPlace(null);
+              },
+            }}
+          >
+            <div className="pop-up">
+              <p>{place.name}</p>
+            </div>
+          </Popup>
         )}
         {showParkWalks && (
           <Polygon pathOptions={{ color: "black" }} positions={parkWalks} />
