@@ -6,8 +6,8 @@ import {
   Popup,
   TileLayer,
 } from "react-leaflet";
-import { useState } from "react";
-import { markerArr, mainLines, parkWalks } from "../data/markerData";
+import { useState, useEffect } from "react";
+import { mainLines, parkWalks } from "../data/markerData";
 import "./Map.css";
 
 const Map = ({
@@ -20,6 +20,18 @@ const Map = ({
   setComparisonTwo,
 }) => {
   const [place, setPlace] = useState(null);
+  const [markers, setMarkers] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/markers")
+      .then((response) => {
+        const results = response.json();
+        return results;
+      })
+      .then((results) => {
+        setMarkers(results);
+      });
+  }, []);
 
   return (
     <div className="leaflet-container">
@@ -31,18 +43,19 @@ const Map = ({
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        {markerArr.map((marker) => (
-          <Marker
-            key={marker.name}
-            position={[marker.coOrds[0], marker.coOrds[1]]}
-            eventHandlers={{
-              click: () => {
-                setPlace(marker);
-                setTableData(marker);
-              },
-            }}
-          ></Marker>
-        ))}
+        {markers &&
+          markers.map((marker) => (
+            <Marker
+              key={marker.name}
+              position={[marker.coOrds[0], marker.coOrds[1]]}
+              eventHandlers={{
+                click: () => {
+                  setPlace(marker);
+                  setTableData(marker);
+                },
+              }}
+            ></Marker>
+          ))}
         {showMainlines && (
           <Polyline pathOptions={{ color: "blue" }} positions={mainLines} />
         )}

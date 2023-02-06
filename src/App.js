@@ -1,5 +1,5 @@
 import Map from "./components/Map";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Table from "./components/Table";
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
   const [comparisonOne, setComparisonOne] = useState(null);
   const [comparisonTwo, setComparisonTwo] = useState(null);
 
-  console.log(tableData, "<<<<tableData");
   return (
     <div className="App">
       <h2>Practicing with Leaflet</h2>
