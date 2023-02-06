@@ -1,0 +1,57 @@
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  border-radius: 5px;
+  height: 700px;
+  width: 40%;
+}
+
+.data-grid {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(57, 57, 57);
+  border-radius: 5px;
+  height: 60%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.table-image {
+  height: 100%;
+  border-radius: 5px;
+  margin: 10px;
+  align-self: center;
+}
+
+.table-img-and-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.table-type-and-place {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-img-and-info > p {
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.type {
+  padding: 10px;
+}
+
+.rating {
+  padding: 10px;
+}

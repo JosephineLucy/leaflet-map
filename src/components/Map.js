@@ -8,6 +8,7 @@ import {
 } from "react-leaflet";
 import { useState } from "react";
 import { markerArr, mainLines, parkWalks } from "../data/markerData";
+import "./Map.css";
 
 const Map = ({
   showMainlines,
