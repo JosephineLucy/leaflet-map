@@ -1,10 +1,11 @@
 import Map from "./components/Map";
 import { useEffect, useState } from "react";
 import Table from "./components/Table";
+import "./components/Map.css";
 
 function App() {
-  const [showMainlines, setShowMainlines] = useState(true);
-  const [showParkWalks, setShowParkWalks] = useState(true);
+  const [showMainlines, setShowMainlines] = useState(false);
+  const [showParkWalks, setShowParkWalks] = useState(false);
   const [tableData, setTableData] = useState(null);
   const [comparisonOne, setComparisonOne] = useState(null);
   const [comparisonTwo, setComparisonTwo] = useState(null);

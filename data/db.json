@@ -5,89 +5,89 @@
       "coOrds": [52.56105422973633, -1.8219709396362305],
       "googleRating": 4.1,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg",
-      "type": "restaurant"
+      "type": "Restaurant"
     },
     {
       "name": "Wyndley Leisure Centre",
       "coOrds": [52.562618255615234, -1.8336868286132812],
-      "type": "gym",
+      "type": "Gym",
       "googleRating": 4.1,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Under Pressure Espresso",
       "coOrds": [52.5593537, -1.8260082],
-      "type": "coffee shop",
+      "type": "Coffee Shop",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "New Hall Valley Country Park",
       "coOrds": [52.54953, -1.80573],
-      "type": "park",
+      "type": "Park",
       "googleRating": 4.6,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Sunnybank",
       "coOrds": [52.5415476, -1.8340355],
-      "type": "residential",
+      "type": "Residential",
       "googleRating": 5,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Costa Wylde Green",
       "coOrds": [52.537288, -1.827556],
-      "type": "coffee shop",
+      "type": "Coffee Shop",
       "googleRating": 4.2,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Boldmere Gate",
       "coOrds": [52.55592402645637, -1.8442376768712943],
-      "type": "sutton park",
+      "type": "Park Gate",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Banners Gate",
       "coOrds": [52.557232936482556, -1.8678662955245962],
-      "type": "sutton park",
+      "type": "Park Gate",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Four Oaks Gate",
       "coOrds": [52.58477585194859, -1.8399671707098575],
-      "type": "sutton park",
+      "type": "Park Gate",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Town Gate",
       "coOrds": [52.56506177721447, -1.8297563887416324],
-      "type": "sutton park",
+      "type": "Park Gate",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Jamboree Stone",
       "coOrds": [52.571009834819755, -1.856759092029483],
-      "type": "sutton park",
+      "type": "Park Gate",
       "googleRating": 4.7,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "The Garden Room",
       "coOrds": [52.54441859841507, -1.8509276811959907],
-      "type": "coffee shop",
+      "type": "Coffee Shop",
       "googleRating": 4.4,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     },
     {
       "name": "Blackroot Bistro",
       "coOrds": [52.57142547958658, -1.8407605843063202],
-      "type": "coffee shop",
+      "type": "Coffee Shop",
       "googleRating": 4.4,
       "imgURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/5c/5f/dc/blackroot-bistro.jpg"
     }
